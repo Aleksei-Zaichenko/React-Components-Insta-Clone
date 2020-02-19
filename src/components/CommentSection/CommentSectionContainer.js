@@ -12,9 +12,10 @@ const CommentSection = ({comments}) => {
   return (
     <div>
       {/* map through the comments data and return the Comment component */}
-      {data.map( comment =>(
-      <CommentInput comment ={comment}/>
-      ))}
+        {data.map( comment =>(
+          <Comment username ={comment.username} text={comment.text}/>
+        ))}
+      <CommentInput/>
     </div>
   );
 };
