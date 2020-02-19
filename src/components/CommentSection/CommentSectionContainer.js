@@ -12,8 +12,8 @@ const CommentSection = ({comments}) => {
   return (
     <div>
       {/* map through the comments data and return the Comment component */}
-        {data.map( comment =>(
-          <Comment username ={comment.username} text={comment.text}/>
+        {data.map( (comment, index) =>(
+          <Comment key ={index} comment ={comment}/>
         ))}
       <CommentInput/>
     </div>
